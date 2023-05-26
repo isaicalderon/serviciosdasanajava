@@ -1,0 +1,7 @@
+.classpath
+.settings/
+.settings/*
+.settings
+
+build/*
+bin/*

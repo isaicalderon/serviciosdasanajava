@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>ServiciosDasanaJava</display-name>
+
+	<context-param>
+		<param-name>javax.ws.rs.Application</param-name>
+		<param-value>com.grupodasana.service.AplicacionRest</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>log4j-init</servlet-name>
+		<servlet-class>com.grupodasana.controller.Log4jInit</servlet-class>
+		<init-param>
+			<param-name>log4j-init-file</param-name>
+			<param-value>log4j_dasana.properties</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+</web-app>
